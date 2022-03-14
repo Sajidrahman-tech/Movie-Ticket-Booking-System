@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Book Ticket</mat-card-title>
+  </mat-card-header>
+  <form  (submit)="bookTicket(postForm)" #postForm="ngForm">
+
+
+    <mat-form-field appearance="fill">
+      <mat-label>Theatres available</mat-label>
+      <mat-select matInput
+
+      name="theatre"
+      ngModel
+      required
+
+      placeholder="Theatre"
+      #theatre="ngModel">
+        <mat-option *ngFor="let t of theatres; let i = index" [value]="theatres[i].theatre_id">
+          {{theatres[i].theatre_name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input
+        matInput
+
+        name="ticketcount"
+        ngModel
+        required
+
+        placeholder="Ticket count"
+        #ticketcount="ngModel">
+
+    </mat-form-field>
+
+<br>
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit">Book</button>
+  </form>
+</mat-card>

@@ -1,0 +1,20 @@
+
+    <nav>
+        <div class="logo">
+
+            <a href=""> <h3>MOVIE BEEE</h3></a>
+        </div>
+        <ul class="nav-links">
+
+          <li><a routerLink="/">Movies</a></li>
+          <li><a routerLink="/theatres">Theatres</a></li>
+          <li *ngIf="loggedIn==false"><a routerLink="/login">Log In/Sign Up</a></li>
+          <li *ngIf="loggedIn==true" style="color:white;"><a routerLink="">{{mail}}</a></li>
+
+
+        </ul>
+
+    </nav>
+
+
+

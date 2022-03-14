@@ -1,0 +1,87 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Sign Up</mat-card-title>
+  </mat-card-header>
+  <form  (submit)="onAddUser(postForm)" #postForm="ngForm">
+
+
+
+
+    <mat-form-field>
+      <input
+        matInput
+
+        name="fname"
+        ngModel
+        required
+
+        placeholder="First Name"
+        #fname="ngModel">
+
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+
+        name="lname"
+        ngModel
+        required
+
+        placeholder="Last Name"
+        #lname="ngModel">
+
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+
+        name="mobile"
+        ngModel
+        required
+        placeholder="Mobile Number"
+        #mobile="ngModel">
+
+    </mat-form-field>
+
+
+
+
+
+
+
+
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="email"
+        ngModel
+        required
+        minlength="3"
+        placeholder="Email ID"
+        #email="ngModel">
+
+    </mat-form-field>
+
+    <mat-form-field>
+
+       <input
+        matInput
+        type="password"
+        name="password"
+        ngModel
+        required
+        placeholder="Password"
+        #password="ngModel">
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+
+      </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit">Sign Up</button>
+  </form>
+</mat-card>
