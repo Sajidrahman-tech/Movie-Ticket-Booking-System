@@ -345,9 +345,7 @@ git push origin feature/your-feature-name
 - **Seat Conflicts**: Ensure proper locking mechanisms
 - **Email Delivery**: Check spam folders and SMTP settings
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
