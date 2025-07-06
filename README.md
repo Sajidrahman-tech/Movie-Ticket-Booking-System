@@ -336,10 +336,8 @@ git push origin feature/your-feature-name
 ## 🆘 Support
 
 ### Getting Help
-- **Documentation**: [docs.cinebook.com](https://docs.cinebook.com)
-- **Community Forum**: [forum.cinebook.com](https://forum.cinebook.com)
-- **Discord**: [discord.gg/cinebook](https://discord.gg/cinebook)
-- **Email Support**: support@cinebook.com
+
+- **Email Support**: sajidrahman@dal.ca
 
 ### Common Issues
 - **Connection Issues**: Check database and Redis connections
